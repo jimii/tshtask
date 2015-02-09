@@ -1,0 +1,40 @@
+%h4 Report for #{@symbol}
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Buy
+      %th Sell
+  %tbody
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th min
+      %th max
+      %th median
+      %th average
+      %th min
+      %th max
+      %th median
+      %th average
+  %tbody
+    %tr
+      %td
+        = @buy_min
+      %td
+        = @buy_max
+      %td
+        = @buy_median
+      %td
+        = @buy_average
+      %td
+        = @sell_min
+      %td
+        = @sell_max
+      %td
+        = @sell_median
+      %td
+        = @sell_average
+
+= high_chart("some_id", @chart)

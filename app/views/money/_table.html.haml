@@ -1,0 +1,22 @@
+%h4
+  = @exchange.first.name
+%table.table.table-striped
+  %thead
+    %tr
+      %th Name
+      %th Symbol
+      %th Buy price
+      %th Sell price
+  %tbody
+    - @exchange.first.currencies.each do |currency|
+      %tr
+        %td
+          = link_to(currency.name, report_money_path(currency.code))
+        %td
+          = currency.code
+        %td
+          = currency.buy_price
+        %td
+          = currency.sell_price
+
+= paginate @exchange
