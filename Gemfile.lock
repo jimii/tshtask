@@ -246,6 +246,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   lazy_high_charts
+  nokogiri
   pg
   puma
   quiet_assets

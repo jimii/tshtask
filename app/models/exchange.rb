@@ -1,6 +1,5 @@
 require 'open-uri'
 require 'net/http'
-require 'nokogiri'
 
 class Exchange < ActiveRecord::Base
 

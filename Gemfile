@@ -18,6 +18,7 @@ gem 'kaminari'
 gem 'active_median'
 gem 'lazy_high_charts'
 gem 'puma'
+gem 'nokogiri'
 
 group :development do
   gem 'better_errors'
