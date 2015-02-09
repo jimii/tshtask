@@ -17,6 +17,7 @@ gem 'sidekiq'
 gem 'kaminari'
 gem 'active_median'
 gem 'lazy_high_charts'
+gem 'puma'
 
 group :development do
   gem 'better_errors'
@@ -27,13 +28,12 @@ group :development do
 end
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'puma'
   gem 'rspec-rails'
   gem 'faker'
   gem 'shoulda-matchers', require: false
 end
 group :production do
-  gem 'unicorn'
+  gem 'rails_12factor'
 end
 group :test do
   gem 'capybara'
